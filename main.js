@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, Menu, MenuItem} = require('electron')
 const reload = require('electron-reload')
 const path = require('path')
 function createWindow(){
@@ -15,8 +15,14 @@ function createWindow(){
     
       // and load the index.html of the app.
       win.loadFile('index.html').then(function(){
-        win.removeMenu();
+        // let menu=remote.Menu ;
+        
+        // menu.append(new MenuItem({label:'save',click(){
+        //   console.log('item save clicked');
+        // }}));
+        // console.log(menu.items);
         win.maximize();
+        win.removeMenu();
         win.show();
         win.webContents.openDevTools();
       });
