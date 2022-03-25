@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "electron": "^9.1.0",
+    "electron": "^13.6.6",
     "electron-reload": "^1.5.0",
     "jquery": "^3.5.1",
     "jquery-ui-dist": "^1.12.1",
